@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+}
+
+.form-image {  
+    min-width: 50vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50vw;
+    flex-direction: column;
+    font-family: "Titillium Web";
+    
+    form {
+        max-width: 384px;
+        .title {
+            padding-bottom: 30px;
+            width: 90%;
+            h1 {
+                padding-bottom: 20px;
+            }
+            p {
+                color: #475569;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+        .input-box {
+            display: flex;
+           
+            font-size: 15px;
+            font-weight: 600;
+            flex-direction: column;
+            position: relative;
+            padding-bottom: 15px;
+            label {
+                
+                padding-bottom: 10px;
+            }
+            input {
+                padding: 16px 12px;
+                border: solid 1px #E2E8F0;
+                border-radius: 4px;
+                outline: 0;
+            }
+            a {
+                text-decoration: none;
+                position: absolute;
+                right: 10px;
+                top: 0px;
+            }
+        }
+        .button {
+            margin-top: 20px;
+            background-color: #7C3AED;
+            padding: 16px 24px;
+            border: none;
+            border-radius: 4px;
+            gap: 10px;
+            cursor: pointer;
+            width: 100%;
+            outline: 0;
+            color: white;
+            font-weight: 700;
+        }
+        .button:hover {
+            background-color: #462187;
+        }
+        .inscreva-se {
+            padding-top: 20px;
+            font-weight: 400;
+            font-size: 16px;
+            span {
+                font-weight: 700;
+                color: #7C3AED;
+            }
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: 600;
+            color: #7C3AED;
+        }
+        a:hover {
+            color: #462187;
+        }
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .container {
+        flex-direction: column;
+    }
+    .form {
+        width: auto;
+        padding-top: 70px;
+        justify-content: center;
+        align-items: center;
+
+        form {
+            width: 80%;
+        }
+    }
+    .form-image {  
+        width: auto;
+        height: 35vh;
+        box-sizing: border-box;
+    }
+}
+
+
