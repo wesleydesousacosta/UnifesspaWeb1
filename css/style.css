@@ -25,6 +25,7 @@
     width: 50vw;
     flex-direction: column;
     font-family: "Titillium Web";
+    padding-bottom: 20px;
     
     form {
         max-width: 384px;
